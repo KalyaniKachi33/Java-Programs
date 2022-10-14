@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array {
@@ -7,24 +8,23 @@ public class Array {
     {
         for(int i=0;i<str1.length;i++)
             System.out.println(str1[i]);
-
     }
     public void numArray()
     {
         int num[] = new int[5];
         Scanner in = new Scanner(System.in);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++)
             num[i] = in.nextInt();
-            System.out.println(num[i]);
-        }
+            System.out.println(Arrays.toString(num));
+
     }
 
     public static void main(String[] args) {
 //        Array a=new Array();
         Array a2=new Array();
-        System.out.println("Enter numbers....");
+        System.out.println("Enter array of numbers....");
         a2.numArray();
-        System.out.println("Calling String Array2()....");
+        System.out.println("Print String Array....");
         a2.Array2("Y");
     }
 }
