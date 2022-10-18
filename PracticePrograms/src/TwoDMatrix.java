@@ -5,9 +5,9 @@ public class TwoDMatrix {
 
     public static void main(String[] args) {
         int[][] matrix = {
-                {0, 0,1},
-                {0, 1,2},
-                {2, 0,0}
+                {0, 0,1,0},
+                {0, 1,2,1},
+                {2, 0,0,1}
         };
         int count=0;
         for (int i = 0; i < 3; i++) {
@@ -17,6 +17,6 @@ public class TwoDMatrix {
                     count++;
             }
         }
-        System.out.println("Count= "+count);
+        System.out.println("Count of 0 = "+count);
     }
 }
